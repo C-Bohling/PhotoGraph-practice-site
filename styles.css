@@ -1,0 +1,218 @@
+/* Universal Styles */
+
+html {
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 1000;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+    margin-bottom:1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.main {
+    padding-top: 4.0625rem;
+}
+
+.section {
+    padding: 3rem;
+}
+
+/* .logo {
+    font-size: 2rem;
+} */
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    height: 4rem;
+    border-bottom: 0.0625rem solid gray;
+    position:fixed;
+    background-color:#fdf7f2;
+}
+
+header .desktop {
+    height: 100%;
+}
+
+header nav {
+    width: 30%;
+    height: 100%;
+    margin: 0 3%;
+    display: inline-block;
+}
+
+header nav ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 3rem;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+header .login {
+    float: right;
+    display: inline-flex;
+    width:fit-content;
+    height: 100%;
+    margin: 0 3%;
+    align-items: center;
+    font-size: 1.25rem;
+    
+}
+
+header .login a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.125rem;
+    background-color:rgb(255, 255, 106);
+}
+
+@media only screen and (max-width:650px) {
+    header nav ul li a {
+        font-size:1.25rem;
+    }
+}
+
+/* banner */
+
+.banner {
+    background-image: url("media/Background wide.png");
+    background-size: cover;
+    background-position:50%;
+    width: 100%;
+    height: 18.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background-color:rgba(255, 255, 255, 0.5);
+    padding: 5% 7%;
+    border-radius: 50%;
+}
+
+.feature-section {
+    background-color:hsl(28, 100%, 99%);
+    padding: 1rem;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.feature {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 20rem;
+    min-width: 20rem;
+    max-width: 33%;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 720px) {
+    .features {
+        display: block;
+        text-align: center;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+}
+
+.mission-section {
+    padding: 1rem;
+}
+
+.quote {
+    display: block;
+    font-size: 3rem;
+    width: 35%;
+    min-width: 29.25rem;
+    margin: 0 auto;
+    font-style:italic;
+    color: rgb(43, 99, 179);
+}
+
+.team-section {
+    background-color:hsl(28, 100%, 99%);
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.member {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 20rem;
+    min-width: 20rem;
+    max-width: 20%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fdf7f2;
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 740px) {
+    .team-members {
+        display: block;
+        text-align: center;
+    }
+
+    .member {
+        width: 100%;
+        max-width: 30rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        
+    }
+}
